@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-199985372-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-199985372-1');
+</script>
+ <title>YouTube Video Thumbnail Preview | Mr.Designer</title>
+ <meta name="robots" content="index, follow">
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ <meta name="language" content="English">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="icon" type="image/jpeg" href="channels4_profile.jpg"/>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/><style>
+   @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+::selection{
+    color:#fcfcfc;
+    background:#00eeffd2
+}
+::-webkit-scrollbar{
+    width:10px
+}
+::-webkit-scrollbar-track{
+    background:#fff
+}
+::-webkit-scrollbar-thumb{
+    background:#0099ff;
+    border-radius:12px;
+    transition:all .3s ease
+}
+::-webkit-scrollbar-thumb:hover{
+    background:#4534fe
+}
+.container{
+    max-width:900px;
+    padding:0 20px;
+    margin:100px auto 0;
+}
+.container header{
+    text-align:center
+}
+.container header h1{
+    font-size:38px
+}
+.container header span{
+    display:block;
+    margin-top:8px;
+    font-size:22px
+}
+.container .url-area{
+    margin:100px auto 30px;
+    max-width:850px
+}
+.url-area .url-text{
+    display:block;
+    font-size:20px;
+    margin-bottom:8px
+}
+.url-area .input-box{
+    height:55px;
+    width:100%;
+    position:relative
+}
+.input-box input{
+    width:70%;
+    height:100%;
+    outline:0;
+    padding:0 170px 0 15px;
+    border-radius:5px;
+    font-size:16px;
+    border:1px solid #ccc;
+    font-family:'Noto Sans',sans-serif
+}
+.input-box input.valid,.input-box input:focus{
+    padding-left:14px;
+    border:5px solid #00eefff1
+}
+.input-box input::placeholder
+{color:#ccc
+}
+.container button{
+    color:#fff;
+    outline:0;
+    border:none;
+    cursor:pointer;
+    border-radius:4px;
+    background:#2b87ff
+}
+.input-box .get-btn{
+    position:absolute;
+    right:7px;
+    top:50%;
+    font-size:17px;
+    opacity:0;
+    pointer-events:none;
+    padding:0 14px;
+    height:calc(100% - 13px);
+    transform:translateY(-50%)
+}
+.input-box .get-btn.show{
+    opacity:1;
+    pointer-events:auto;
+    transition:all .1s ease
+}
+.container button:hover{
+    background:#1500ff;
+    transition:all .3s ease
+}
+.thumbnails{
+    width:100%;
+    display:none
+}
+.thumbnails .thumb{
+    background:#fff;
+    border-radius:5px;
+    box-shadow:0 0 20px rgba(0,0,0,.15)
+}
+.thumbnails .thumb.hq{
+    margin:0 auto;
+    max-width:850px
+}
+.thumbnails .thumb .img-area{
+    width:100%;
+    text-decoration:none
+}
+.thumbnails .thumb .img-area img{
+    width:100%;
+    border-radius:5px
+}
+.thumbnails .details{
+    padding:10px 0 15px 0;
+    display:flex;
+    align-items:center;
+    justify-content:center
+}
+.thumbnails .details .item{
+    display:block;
+    margin:0 10px
+}
+.thumbnails .details span{
+    color:#000;
+    font-size:15px
+}
+.thumbnails .details .download-btn{
+    font-size:15px;
+    padding:8px 20px
+}
+.thumbnails .row{
+    margin:30px 0;
+    width:100%;
+    display:flex;
+    margin-bottom:120px;
+    justify-content:space-between
+}
+.thumbnails .row .thumb{
+    margin-right:0;
+    margin-left:0;
+    width:calc(100% / 2 - 15px)
+}
+footer{
+    position:fixed;
+    bottom:30px;
+    left:50%;
+    width:100%;
+    text-align:center;
+    padding:0 20px;
+    margin-top:100px;
+    transform:translateX(-50%)
+}
+footer.active{
+    position:relative;
+    bottom:30px;
+    left:0;
+    transform:translateX(0)
+}
+footer a{
+    color:#4891ff;
+    text-decoration:none
+}
+@media (max-width:791px){
+    .container header h1{
+        font-size:33px
+    }
+    .container header span{
+        font-size:20px
+    }
+}
+@media (max-width:693px){
+    .container{
+        margin:50px auto 0
+    }
+    .container header h1{
+        font-size:26px
+    }
+    .container header span{
+        font-size:16px;
+        margin-top:12px
+    }
+    .container .url-area{
+        margin:60px auto 30px
+    }
+    .url-area .url-text{
+        font-size:16px;
+        margin-bottom:5px
+    }
+    .input-box input{
+        font-size:14px
+    }
+}
+@media (max-width:680px){
+    .thumbnails .row{
+        margin-bottom:30px;
+        flex-direction:column
+    }
+    .thumbnails .row .thumb{
+        width:100%;
+        margin-bottom:30px
+    }
+    .thumbnails .row .thumb:last-child{
+        margin-bottom:0
+    }
+    .thumbnails .thumb .details span{
+        font-size:14px
+    }
+}
+@media (max-width:530px){
+    .url-area .input-box{
+        display:flex;
+        height:auto;
+        flex-direction:column
+    }
+    .input-box input{
+        height:47px;
+        padding:0 15px
+    }
+    .input-box .get-btn{
+        position:relative;
+        right:0;
+        top:0;
+        opacity:1;
+        width:100%;
+        font-size:15px;
+        padding:11px 0;
+        margin-top:10px;
+        pointer-events:auto;
+        transform:translateY(0)
+    }
+}
+@media (max-width:455px){
+    .thumbnails .row{
+        flex-direction:column
+    }
+    .thumbnails .row .thumb{
+        width:100%
+    }
+    .thumbnails .thumb .details span{
+        font-size:15px;
+        margin:0 0 15px 0
+    }
+    .thumbnails .details{
+        flex-direction:column
+    }
+    .thumbnails .details .download-btn{
+        width:calc(100% - 30px)
+    }
+    footer{
+        font-size:15px
+    }
+}
+@media (max-width:390px){
+    .container header h1{
+        font-size:24px
+    }
+}
+ </style>
+ </head>
+ <body>
+ <div class="container">
+ <header>
+ <h1>YouTube Video Thumbnail Preview</h1>
+ <span>View any YouTube video thumbnail</span>
+ </header>
+ <div class="url-area">
+ <span class="url-text">Paste video url here</span>
+ <div class="input-box">
+ <input type="text" class="url-input" placeholder="Example : https://www.youtube.com/watch?v=qVHaXD7zHDQ">
+ <button class="get-btn">Preview</button> 
+ </div>
+ </div>
+ <form class="thumbnails" action="" method="POST">
+ <input type="hidden" class="download-img-url" name="img-url">
+ <div class="thumb hq">
+ <a href="#" target="_blank" class="img-area"><img src="#" alt="(HQ) Max High-Quality - 1280 x 720"></a>
+ <div class="details">
+ <span class="item">(HQ) Max High-Quality - 1280 x 720</span>
+ </div>
+ </div>
+ <div class="row">
+ <div class="thumb sq">
+ <a href="#" target="_blank" class="img-area"><img src="#" alt="(SQ) Standard Quality - 640 x 480"></a>
+ <div class="details">
+ <span class="item">(SQ) Standard Quality - 640 x 480</span>
+ </div>
+ </div>
+ <div class="thumb mq">
+ <a href="#" target="_blank" class="img-area"><img src="#" alt="(MQ) Medium Quality - 480 x 360"></a>
+ <div class="details">
+ <span class="item">(MQ) Medium Quality - 480 x 360</span>
+ </div>
+ </div>
+ </div>
+ </form>
+ <footer>Copyright &copy; 2021 <a href="https://www.youtube.com/channel/UCMw-3CIBuh1jhLx1b0mRZEg">Mr.Designer</a> All Rights Reserved</footer>
+ </div>
+ <script>
+   function validateURL(){let e=inputField.value,t=thumbnails.querySelector(".hq .img-area"),i=thumbnails.querySelector(".sq .img-area"),l=thumbnails.querySelector(".mq .img-area"),r=thumbnails.querySelector(".hq .img-area img"),o=thumbnails.querySelector(".sq .img-area img"),u=thumbnails.querySelector(".mq .img-area img");if(-1!=e.indexOf("https://www.youtube.com/watch?v=")||-1!=e.indexOf("https://youtu.be/")){getThumbBtn.classList.add("show"),inputField.classList.add("valid"),-1!=e.indexOf("https://www.youtube.com/watch?v=")?vidId=e.split("v=")[1].substring(0,11):-1!=e.indexOf("https://youtu.be/")&&(vidId=e.split("be/")[1].substring(0,11));let s=`https://img.youtube.com/vi/${vidId}/maxresdefault.jpg`,n=`https://img.youtube.com/vi/${vidId}/sddefault.jpg`,d=`https://img.youtube.com/vi/${vidId}/hqdefault.jpg`;r.src=s,o.src=n,u.src=d,t.setAttribute("href",s),i.setAttribute("href",n),l.setAttribute("href",d),getThumbBtn.addEventListener("click",()=>{footerCredit.classList.add("active"),thumbnails.style.display="block",scroll()})}else thumbnails.style.display="none",getThumbBtn.classList.remove("show"),inputField.classList.remove("valid"),footerCredit.classList.remove("active");const s=thumbnails.querySelectorAll(".download-btn");for(let e=0;e<s.length;e++)s[e].addEventListener("click",e=>{let t=e.target.parentElement.parentElement.querySelector(".img-area img").src;document.querySelector(".download-img-url").value=t})}function scroll(){document.querySelector("body").offsetWidth<420?window.scrollTo(0,385):window.scrollTo(0,400)}inputField=document.querySelector(".input-box .url-input"),getThumbBtn=document.querySelector(".input-box .get-btn"),thumbnails=document.querySelector(".container .thumbnails"),footerCredit=document.querySelector(".container footer"),inputField.addEventListener("focus",()=>{document.querySelector("body").offsetWidth<700&&(footerCredit.style.display="none"),validateURL()}),inputField.addEventListener("blur",()=>{setTimeout(()=>{footerCredit.style.display="block"},300)}),inputField.addEventListener("input",()=>{validateURL()});
+ </script>
+ </body>
+</html>
